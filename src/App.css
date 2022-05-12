@@ -1,38 +1,89 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+}
+
 .App {
-  text-align: center;
+  background: #23252C;
+  color: #DCDCDC;
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  overflow: hidden;
+  margin: 1em auto;
+  border-radius: 15px;    
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* INFO */
+.info--section {
+  padding: .5em;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.info--text {
+  font-size: .8rem;
+  margin-top: .3rem;    
+}
+.info--img {
+  width: 20rem;
+}
+.info--btn--container {
+     margin-top: 1.5em;
+     display: flex;
+     width: 80%;
+     align-items: center;
+     justify-content: space-between;
+}
+.info--btn {
+  padding: 7px 18px;
+  border-radius: 5px;
+  border: none;
+  display: flex;
+  /* font-size: 12px; */
+}
+.fa--info {
+  margin-right: 10px;
+}
+.one {
+  color: #1E1F26;
+  background: #D1D5DB;
+}
+.two {
+  background: #5093E2;
+  color: #FFFFFF;
 }
 
-.App-link {
-  color: #61dafb;
+/* About  + Interests + Footer  */
+.About, .Interests, .Footer {
+  padding: 1em 2em;
+  width: 100%
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.section--head  {
+  font-size: 1.2rem;
+}
+.section--text {
+  margin-top: .3rem;
+  font-size: .7rem;
+  line-height: 16px;
+}
+
+/* Footer */
+
+.Footer .fa-brands {
+  margin: 7px 0;
+  font-size: 2em; 
+  color:  #918E9B  ; 
+}
+.footer--icons {
+  justify-content: space-between;
+  display: flex;
+  width: 60%;
+  margin-inline: auto;
+}
+.fa-linkedin {
+  font-size: 18px !important ;
 }
